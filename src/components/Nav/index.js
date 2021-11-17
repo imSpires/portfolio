@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../images/logo.png"
-import {Link} from "react-scroll";
+import React from "react";
+import { Link } from "react-scroll";
 
 
 function Nav() {
@@ -8,7 +7,7 @@ function Nav() {
     <nav className="navbar">
         <div className="nav-wrap">
             <div className="logo">
-                <img src={logo} className="imglogo" alt="logo" />
+                <Link className="linkto" to="/"><p>ryan.<span>dungan</span></p></Link>
             </div>
 
             <div className="link-wrap">
@@ -18,15 +17,15 @@ function Nav() {
                     </li>
 
                     <li>
-                        <Link className="center" to="/about">About</Link>
+                        <Link className="center" to="about">About</Link>
                     </li>
 
                     <li>
-                        <Link className="center" to="/portfolio">Portfolio</Link>
+                        <Link className="center" to="my-work">My Work</Link>
                     </li>
 
                     <li>
-                        <Link className="center" to="/contact">Contact</Link>
+                        <Link className="center" to="contact">Contact</Link>
                     </li>
                     
                 </ul>
