@@ -4,8 +4,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import "./style.css";
 import { Routes, Route} from "react-router-dom";
+import "./style.css";
 
 
 function App() {

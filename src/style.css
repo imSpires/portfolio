@@ -16,11 +16,16 @@
 
 html {
     scroll-behavior: smooth;
+    --image-gradient: linear-gradient(to bottom left,rgba(17,16,16,0.678),rgba(12,10,22,0.863));
 }
 
-/* .about-me, .my-work, .contact {
+body {
+    background-color: var(--primary-color);
+}
+
+.header {
     scroll-margin-top: 1em;
-} */
+}
 
 /* Nav */
 
@@ -75,6 +80,10 @@ html {
     align-items: center;
 }
 
+.linkto, .center {
+    cursor: pointer;
+}
+
 .link-wrap ul li a {
     font-size: 18px;
     line-height: 1.5;
@@ -96,7 +105,7 @@ html {
 }
 
 .link-wrap ul li a:hover::before {
-    width: 100%;
+    width: 90%;
     transition: .5s ease-in-out;
 }
 
@@ -110,3 +119,90 @@ html {
 }
 
 /* End Nav */
+
+/* Header */
+
+.header {
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
+
+.header-left h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.header-left h1 span {
+    font-size: 70px;
+}
+
+.header-left div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.span-color {
+    color: var(--dark)
+}
+
+.header-right {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-right img {
+    width: 80%;
+    height: 80%;
+}
+
+.Typewriter__wrapper {
+    font-size: 2.2em !important;
+    color: var(--dark) !important;
+    font-weight: 600 !important;
+  }
+.Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: var(--tertiary-color) !important;
+}
+
+#tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+@media (max-width: 767px) {
+    .Typewriter__wrapper {
+        font-size: 1.4em !important;
+        font-weight: 300 !important;
+        position: absolute !important;
+    }
+    .Typewriter__cursor {
+      display: none !important;
+    }
+  }
+
+

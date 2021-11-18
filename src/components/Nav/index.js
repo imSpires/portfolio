@@ -13,19 +13,19 @@ function Nav() {
             <div className="link-wrap">
                 <ul>
                     <li>
-                        <Link className="center" to="/">Home</Link>
+                        <Link className="center" to="/">home( )</Link>
                     </li>
 
                     <li>
-                        <Link className="center" to="about">About</Link>
+                        <Link className="center" to="about">about( )</Link>
                     </li>
 
                     <li>
-                        <Link className="center" to="my-work">My Work</Link>
+                        <Link className="center" to="my-work">myWork( )</Link>
                     </li>
 
                     <li>
-                        <Link className="center" to="contact">Contact</Link>
+                        <Link className="center" to="contact">contact( )</Link>
                     </li>
                     
                 </ul>
