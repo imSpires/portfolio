@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar2 from '../../images/aboutavatar.svg';
+import resume from '../About/Resume.pages';
 
 function About() {
   return (
@@ -18,7 +19,7 @@ function About() {
             <br />
             <em>“Curiosity is the wick in the candle of learning.”</em> ―William Arthur Ward
             </p>
-            <button className="resume-btn">Resume (PDF)</button>
+            <a className="resume-btn" href={resume} download rel="noopener noreferrer" target="_blank">Resume (PDF)</a>
         </div>
       </div>
 
