@@ -1,6 +1,11 @@
 import React from 'react';
+import { Form, Formik} from 'formik';
+import * as Yup from 'yup';
+import ContactForm from '../ContactForm';
+
 
 function Contact() {
+
   return (
     <section className="contact" id="contact">
 
@@ -14,12 +19,7 @@ function Contact() {
       </div>
         <div className="contact-right">
             <div className="contact-box">
-                <h2>Send me a message!</h2>
-                <p>I will get back to you as soon as possible!</p>
-                <input type="text" className="field" placeholder="Your Name" />
-                <input type="email" className="field" placeholder="Your E-mail" />
-                <textarea className="field" placeholder="Message" />
-                <button className="contactbtn btn">Send!</button>
+              <ContactForm />
             </div>
         </div>
 
