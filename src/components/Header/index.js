@@ -5,12 +5,12 @@ import Particle from './Particle'
 
 function Header() {
   return (
-    <section className="header" id="header">
+    <section className="header" id="/">
       < Particle />
       <div className="header-left">
           <h1> Hi!
           <br />
-          <span>I am <span>Ryan.</span></span></h1>
+          <span>I am <span className="span-color">Ryan.</span></span></h1>
           <div> <Type /> </div>
       </div>
 
