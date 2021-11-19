@@ -23,8 +23,8 @@ body {
     background-color: var(--primary-color);
 }
 
-.header, #about {
-    scroll-margin-top: 1em;
+.header, #about, .my-work {
+    scroll-padding-top: 1em;
 }
 
 /* Nav */
@@ -123,7 +123,6 @@ body {
 /* Header */
 
 .header {
-    margin-top: 40px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -233,7 +232,6 @@ body {
 
 .right h2 {
     padding-bottom: 20px;
-    font-size: 60px;
 }
 
 .first-p {
@@ -255,21 +253,23 @@ body {
     border-radius: 7px;
     cursor: pointer;
     border: none;
+    z-index: 1;
 }
 
 .resume-btn:hover {
-    background-color: blue !important;
+    background-color: #2b2d42d2 !important;
     transition: .5s ease-in-out !important;
 }
 
 .myskills {
+    padding-top: 60px;
     font-size: 60px;
    text-align: center;
 }
 
 .skills {
     width: 100%;
-    padding: 10px 125px;
+    padding: 50px 125px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,19 +284,274 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px #ef233b88 solid;
+    border: 3px #ef233b88 solid;
+    z-index: 1;
 }
 
 .tech-icons i {
-    color: #2b2d42a6;
+    color: #2b2d42d2;
     font-size: 80px;
 }
 
 .tech-icons:hover {
     transition: .3s ease-in;
-    transform: scale(1.1);
-    border: 2px var(--tertiary-color) solid;
+    transform: scale(1.05);
+    border: 3px var(--tertiary-color) solid;
+}
+
+.tech-icons i:hover {
     color: var(--dark);
+    transition: .3s ease-in;
+}
+
+/* Projects */
+
+.my-work {
+    height: auto;
+    padding-top: 60px;
+}
+
+.section-title {
+    font-size: 60px;
+}
+
+.my-work h2 {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 30px;
+    margin: 30px 0px;
+    height: 70vh;
+    width: 650px;
+    box-shadow: 0 2px 5px 3px #ef233b88;
+    transition: all .5s ease;
+    z-index: 1;
+    opacity: .8;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 5px 3px var(--tertiary-color);
+    opacity: .9;
+}
+
+.img-container {
+    display: flex;
+    width: 600px;
+    height: 328px;
+}
+
+.img1 {
+    background: url(./images/projectdemos/newna-bros.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+}
+
+.img2 {
+    background: url(./images/projectdemos/reading-corner.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+}
+
+.img3 {
+    background: url(./images/projectdemos/tech-blog.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+}
+
+.img4 {
+    background: url(./images/projectdemos/portfolio.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+}
+
+.card h3 {
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+.card p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.btn-wrap {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.btn-wrap button {
+    margin: 0 20px;
+    padding: 10px;
+    background-color: var(--dark);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+
+.btn-wrap button i {
+    padding-left: 10px;
+}
+
+.btn-wrap button:hover {
+    background-color: #2b2d42d2 !important;
+    transition: .3s ease-in-out !important;
+}
+
+.contact {
+    padding: 0 100px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-left h2 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.contact-left p {
+    padding: 10px;
+}
+
+.contact-left div {
+    padding-top: 70px;
+}
+
+.contact-left div a{
+    padding: 20px;
+    color: var(--dark);
+    position: relative;
+    z-index: 1;
+}
+
+.contact-left div a:hover {
+    color: #2b2d42d2 !important;
+    transition: .3s ease-in-out !important;
+}
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-box{
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--white);
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+}
+
+.contact-box-left{
+	background-size: cover;
+	height: 100%;
+}
+
+.contact-box-right{
+	padding: 25px 40px;
+}
+
+.contact-box-right h2{
+	position: relative;
+    font-family: 'Rock Salt', cursive;
+}
+
+.contact-box-right h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 200px;
+    border-radius: 2px;
+    background-color: var(--tertiary-color);
+}
+
+.contact-box-right p {
+    padding: 10px 0;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 30px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-box-right textarea{
+	min-height: 150px;
+}
+
+.contactbtn{
+    width: 40%;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.contactbtn:hover{
+    background-color: var(--secondary-color);
+    color: var(--black);
+    transition: .3s ease-in;
+}
+
+.link-wrap button {
+    width: 20%;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+.field:focus{
+    border: 2px solid var(--primary-color);
+    background-color: var(--white);
 }
 
 
