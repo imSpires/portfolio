@@ -1,5 +1,6 @@
 import React, { useState }  from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 // import * as Yup from 'yup';
 
@@ -20,12 +21,18 @@ function ContactForm() {
 
       emailjs.sendForm('service_a576nc3', 'template_z1jwth6', e.target, 'user_culXofI6PLj14NhpM04V2')
       .then((result) => {
-        console.log(result.text);
-        // if (result) {
-        //   console.log("Success")
-        // }
+        console.log(result.text)
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully"
+        })
       }, (error) => {
         console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        })
       });
       e.target.reset();
     }
