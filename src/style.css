@@ -372,7 +372,7 @@ body {
 }
 
 .img3 {
-    background: url(./images/projectdemos/tech-blog.png);
+    background: url(./images/projectdemos/fresh-finds.png);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 0 0 !important;
@@ -562,6 +562,7 @@ body {
 
     * {
         overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     .navbar {

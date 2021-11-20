@@ -37,14 +37,14 @@ function Projects() {
 
         <div className="card">
           <div className="img-container img3"></div>
-          <h3>The Tech Blog</h3>
-          <p>A place to talk tech with anyone. Create new posts and comment on other users posts. Built with MySQL, Sequelize, and Express. </p>
+          <h3>Fresh Finds</h3>
+          <p>A music recommendation app. Select a genre and the app will recommend and play a random song. Save favorites to your favorites list. Utilizes SpotifyAPI.  </p>
           <div className="btn-wrap">
           <button onClick={() => {
-              window.open("https://pacific-brushlands-53431.herokuapp.com/", "_blank");
+              window.open("https://imspires.github.io/fresh-finds/", "_blank");
               }}>Visit the site<i class="fas fa-link"></i></button>
           <button onClick={() => {
-              window.open("https://github.com/imSpires/tech-blog", "_blank");
+              window.open("https://github.com/imSpires/fresh-finds", "_blank");
               }}>See the code<i class="fas fa-code-branch"></i></button>
           </div>
         </div>
