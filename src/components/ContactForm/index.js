@@ -39,7 +39,7 @@ function ContactForm() {
 
     return (
             <div>
-            <h2>Send me a message!</h2>
+            <h2>Contact me <span className="span-color">directly</span></h2>
             <p>I will get back to you as soon as possible!</p>
             <form action="" onSubmit={sendEmail}>
               <input 

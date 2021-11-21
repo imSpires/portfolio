@@ -261,7 +261,7 @@ body {
     transition: .5s ease-in-out !important;
 }
 
-.myskills {
+.about h2 {
     padding-top: 60px;
     font-size: 60px;
    text-align: center;
@@ -574,10 +574,6 @@ body {
         padding: 0;
     }
 
-    .header {
-        height: 90vh;
-    }
-
     .logo {
         width: 100%;
         flex: 1;
@@ -620,6 +616,7 @@ body {
         padding: 0 50px;
     }
 
+
     .container {
         flex-direction: column-reverse;
     }
@@ -634,6 +631,7 @@ body {
         display: flex;
         justify-content: center;
     }
+
 
     .skills {
         padding: 20px 20px;
@@ -685,6 +683,15 @@ body {
         flex-wrap: nowrap;
     }
 
+    .about h2 {
+        padding: 0 0 20px 0;
+        font-size: 40px;
+    }
+
+    .myskills {
+        font-size: 40px;
+    }
+
     .logo {
         flex: 1;
     }
@@ -700,7 +707,6 @@ body {
 
     .header {
         flex-direction: column;
-        height: 80vh;
     }
     
     .header-left {
@@ -736,6 +742,16 @@ body {
 
     .skills {
         justify-content: space-evenly;
+        padding: 20px 5px;
+    }
+
+    .tech-icons {
+        width: 135px;
+        height: 135px;
+    }
+
+    .tech-icons i {
+        font-size: 80px;
     }
 
     .card {
