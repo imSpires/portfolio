@@ -6,12 +6,15 @@
 
   ## Table of Contents
   * [ Project Links ](#Project-Links)
-  * [ Screenshots-Demo ](#Media)
   * [ Description ](#Description)
+  * [ Screenshots-Demo ](#Media)
   * [ Technologies ](#Technologies)
   * [ Author Contact ](#AuthorContact)
   * [ License ](#License)
   #
+  
+  ## Project-Links
+  https://imspires.github.io/portfolio/
 
   ## Description
   My personal portfolio.
@@ -20,7 +23,7 @@
   ![Sreenshot](src/images/projectdemos/portfolio.png?raw=true)
 
   ## Technologies
-  ``` NPM, HTML, CSS, React, TSparticles ```
+  ``` NPM, HTML, CSS, React ```
 
 
   ## Author/Contact
