@@ -23,7 +23,7 @@
   ![Sreenshot](src/images/projectdemos/portfolio.png?raw=true)
 
   ## Technologies
-  ``` NPM, HTML, CSS, React, TSparticles ```
+  ``` NPM, HTML, CSS, React ```
 
 
   ## Author/Contact
