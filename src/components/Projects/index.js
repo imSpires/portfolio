@@ -13,7 +13,7 @@ function Projects() {
           <p>A fully responsive landing page and online ski shop. This website is fully functional and includes a responsive shopping cart with login, signup, and authentication features. Utilizes Stripe.js for checkout. Built with the MERN stack. </p>
           <div className="btn-wrap">
             <button onClick={() => {
-              window.open("https://github.com/Electrolion/Newna-Slopes", "_blank");
+              window.open("https://newna-bros-ski-shop.herokuapp.com/", "_blank");
               }}>Visit the site<i class="fas fa-link"></i></button>
             <button onClick={() => {
               window.open("https://github.com/Electrolion/Newna-Slopes", "_blank");
