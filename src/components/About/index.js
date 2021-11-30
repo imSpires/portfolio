@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import avatar2 from '../../images/aboutavatar.svg';
-import resume from '../About/Resume.pages';
+import resume from './Resume.pdf';
 
 function About() {
   return (
@@ -18,7 +18,7 @@ function About() {
         <Fade right>
           <div className="right">
               <h2 class="section-title"> About <span className="span-color">Me.</span></h2>
-              <p className="first-p">My name is Ryan Dungan. I am a full stack web developer and a University of Central Florida coding bootcamp graduate. </p>
+              <p className="first-p">My name is Ryan Dungan. I am a full stack web developer and a University of Central Florida coding bootcamp graduate. When possible, I enjoy applying my passion for developing websites and mobile responsive applications using modern javascript libraries such as React.js. </p>
               <p className="second-p">Before building anything on the web I worked as a Crime Scene Investigator, I guess you could say I have a knack for problem solving.
               <br />
               <br />

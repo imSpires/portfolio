@@ -30,7 +30,6 @@ function Contact() {
           </div>
       </div>
       </Fade>
-
     </section>
     
   );
