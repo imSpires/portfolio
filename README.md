@@ -14,7 +14,7 @@
   #
   
   ## Project-Links
-  https://imspires.github.io/portfolio/
+  https://ryandungan.dev/
 
   ## Description
   My personal portfolio.
